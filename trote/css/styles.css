@@ -68,9 +68,36 @@ ol li {
 }
 
 table tr td {
-    padding: 20px;
+    padding: 20px; /* espaçamento da tabela, para não ficar junto */
 }
 
 table {
     margin: 0 auto; /* centraliza a tabela na página */
+}
+
+.laranja {
+    background-color: orange;
+}
+.azul {
+    background-color: blue;
+}
+.preto {
+    background-color: black;
+    color: white;
+}
+.roxo {
+    background-color:purple
+}
+.verde {
+    background-color: green;
+}
+.vermelho {
+    background-color: red;
+}
+.azulescuro {
+    background-color: #003d82;
+}
+
+.corvermelha {
+    color: red;
 }
