@@ -1,22 +1,18 @@
-function calcular(){
-    // declaração variável sem tipo
-   let soma = 0
-   // recupera o valor da ação social digitado
-   let acaoSocial = document.getElementById("acaoSocial").value
-   soma = soma + Number(acaoSocial)
-   // recupera o valor da homenagem digitado
-   let homenagem = document.getElementById("homenagem").value
-   soma = soma + Number(homenagem)
-   // recupera a qtde de litros de leite
-   let leite = document.getElementById("leite").value
-   soma = soma + (2 * Number(leite))
-   // recupera a qtde de kits 
-   let kit = Number(document.getElementById("kit").value)
-   // recupera a cor da equipe
-   let equipe = document.getElementById("equipe").value
-    // recupera a qtde de latas de suplemento
-   let suplemento = document.getElementById("suplemento").value
-   let pontosKitSupl = 0 // guarda pontuação de kit + supl
+function calcular (){
+    let acaoSocial = Number(document.getElementById("acaoSocial").value)
+
+    let homenagem = Number(document.getElementById ("homenagem").value)
+
+    let leite = Number(document.getElementById("leite").value)
+
+    let kit = Number(document.getElementById("kit").value)
+
+    let equipe = (document.getElementById("equipe").value)
+
+    let suplemento = Number(document.getElementById("suplemento").value)
+
+    let pontosKitSupl = 0
+
    if (equipe == "Laranja"){
        // equipe é laranja
        if (kit >= 97 && suplemento >= 49) {
@@ -59,16 +55,12 @@ function calcular(){
             pontosKitSupl = 2500 + ((kit - 51) * 30) + ((suplemento - 26) * 15)
         }
         else if (kit >= 20 && suplemento >= 10){
-            pontosKitSupl = 
+            pontosKitSupl = 1000 + ((kit = 20) * 30) + ((suplemento - 10) * 15)
         }
 
         
+        let soma = Number(acaoSocial) + Number(homenagem) + ( 2 * leite) + (30 * kit) + (15 * suplemento)
 
-
-
-   soma = soma + pontosKitSupl
-  
-   // devolve o resultado para o HTML
-   document.getElementById("soma").innerHTML = `R$ ${soma.toFixed(2)}`
+        document.getElementById("soma").innerHTML = soma.toFixed(2)
 }
 }
