@@ -36,43 +36,37 @@ nav a {
     border-radius: 5px; /* borda com canto arredondado */
 }
 nav a:hover {
-    background: #003d83;
-
+    background: #003d82;
 }
+
 img {
-    width: 120px;
+    width: 100px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 5px; /* espaçamento externo à direita de 20px */
     border-radius: 10px;
-
-
 }
-.container {
+
+.container{
     width: 80%;
-    margin: 20px auto; /* 20px em cima e embaixo e automática esquerda e direita */
+    /* 20px em cima e em baixo e automática èsquerda e direto*/
+    margin: 20px auto; 
     background: white;
     /* espaçamento interno é nos 4 lados */
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
-
 }
 h2 {
-
     text-align: center;
-
-}
-
-ol li {
-    padding-bottom: 10px;
 }
 
 table tr td {
-    padding: 20px; /* espaçamento da tabela, para não ficar junto */
+    padding: 20px;
 }
 
 table {
-    margin: 0 auto; /* centraliza a tabela na página */
+    /* esp. externo de 0 acima e abaixo e automático esq. dir. */
+    margin: 0 auto; 
 }
 
 .laranja {
@@ -80,27 +74,21 @@ table {
 }
 .azul {
     background-color: blue;
+    color: white;
 }
-.preto {
+.preta {
     background-color: black;
     color: white;
 }
 .roxo {
-    background-color:purple
+    background-color: purple;
 }
 .verde {
     background-color: green;
 }
-.vermelho {
+.vermelha {
     background-color: red;
 }
-.azulescuro {
-    background-color: #003d82;
-}
-
-.corvermelha {
-    color: red;
-}
-.campos{
-    margin: 10px;
+.campos {
+    margin: 20px;
 }
