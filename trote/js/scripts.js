@@ -99,11 +99,6 @@ function calcular (){
     }
 
 
-
-
-    soma = soma + pontosKitSupl
-
-
         //sangue
         sangue = Number(document.getElementById("sangue").value)
 
@@ -152,7 +147,7 @@ function calcular (){
         pontosSangue = sangue * 20
     }
     
-
+      soma = acaoSocial + homenagem + leite + sangue + pontosKitSupl + kit
     
         // devolve o resultado para o HTML
         document.getElementById("soma").innerHTML = soma.toFixed(2)
